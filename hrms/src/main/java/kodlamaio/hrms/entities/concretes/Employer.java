@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import kodlamaio.hrms.core.concretes.User;
 import lombok.Data;
 
 @Data

@@ -8,6 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import kodlamaio.hrms.core.concretes.User;
 import lombok.Data;
 @Entity
 @Data
@@ -26,19 +27,19 @@ public class Candidate extends User{
 	@Column(name="last_name")
 	private  String lastName;
 	
-	@Column(name="identification_number")
-	private String identificationNumber;
+	@Column(name="identity_number")
+	private String identityNumber;
 	
 	@Column(name="birth_date")
-	private Date birthDate;
+	private int birthDate;
 
 	public Candidate() {}
 	
-	public Candidate(int id, String firstName, String lastName, String identificationNumber, Date birthDate) {
+	public Candidate(int id, String firstName, String lastName, String identityNumber, int birthDate) {
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.identificationNumber = identificationNumber;
+		this.identityNumber = identityNumber;
 		this.birthDate = birthDate;
 	}
 
